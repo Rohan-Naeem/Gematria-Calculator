@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    Gematria Calculator — Calculate Gematria Values Online
+</title>
+
+<meta
+    name="description"
+    content="Calculate the gematria value of words, names, phrases, and sentences using different English gematria methods with our free online calculator."
+>
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<!-- Canonical -->
+<link
+    rel="canonical"
+    href="https://YOURDOMAIN.com/"
+>
+
+<!-- Open Graph -->
+<meta
+    property="og:type"
+    content="website"
+>
+
+<meta
+    property="og:title"
+    content="Gematria Calculator — Calculate Gematria Values Online"
+>
+
+<meta
+    property="og:description"
+    content="Calculate gematria values for words, names, phrases, and sentences using different gematria methods."
+>
+
+<meta
+    property="og:url"
+    content="https://YOURDOMAIN.com/"
+>
+
+<!-- Favicon -->
+<link
+    rel="icon"
+    type="image/png"
+    href="assets/favicon.png"
+>
+
+<!-- Apple Touch Icon -->
+<link
+    rel="apple-touch-icon"
+    href="assets/favicon.png"
+>
+
+<!-- Main CSS -->
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <!-- Logo -->
+
+        <a
+            href="index.html"
+            class="site-logo"
+            aria-label="Gematria Calculator Home"
+        >
+
+            <img
+                src="assets/logo.png"
+                alt="Gematria Calculator"
+                class="logo-image"
+            >
+
+        </a>
+
+
+        <!-- Navigation -->
+
+        <nav
+            class="main-navigation"
+            id="mainNavigation"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="index.html"
+                class="nav-link active"
+            >
+                Calculator
+            </a>
+
+            <a
+                href="gematria-formula.html"
+                class="nav-link"
+            >
+                Formula
+            </a>
+
+            <a
+                href="gematria-guide.html"
+                class="nav-link"
+            >
+                Guide
+            </a>
+
+            <a
+                href="faq.html"
+                class="nav-link"
+            >
+                FAQ
+            </a>
+
+            <a
+                href="about.html"
+                class="nav-link"
+            >
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- Mobile Menu Button -->
+
+        <button
+            type="button"
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mainNavigation"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MAIN
+========================== -->
+
+<main>
+
+
+    <!-- =========================
+         HERO + CALCULATOR
+    ========================== -->
+
+    <section class="hero-section">
+
+        <div class="container hero-grid">
+
+
+            <!-- Hero Content -->
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+
+                    <span class="eyebrow-line"></span>
+
+                    GEMATRIA CALCULATOR
+
+                </div>
+
+
+                <h1>
+
+                    Discover the
+
+                    <span class="accent-text">
+                        Gematria Value
+                    </span>
+
+                    of Any Word
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Enter a word, name, phrase, or sentence and
+                    calculate its numerical value using different
+                    English gematria methods.
+
+                </p>
+
+
+                <div class="hero-highlights">
+
+
+                    <div class="hero-highlight">
+
+                        <span class="highlight-icon">
+                            01
+                        </span>
+
+                        <span>
+                            Multiple Methods
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-highlight">
+
+                        <span class="highlight-icon">
+                            02
+                        </span>
+
+                        <span>
+                            Instant Results
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-highlight">
+
+                        <span class="highlight-icon">
+                            03
+                        </span>
+
+                        <span>
+                            Free to Use
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 CALCULATOR
+            ========================== -->
+
+            <div class="calculator-card">
+
+
+                <div class="calculator-header">
+
+                    <div>
+
+                        <p class="calculator-label">
+                            GEMATRIA CALCULATOR
+                        </p>
+
+                        <h2>
+                            Calculate a Value
+                        </h2>
+
+                    </div>
+
+
+                    <div class="calculator-badge">
+                        FREE
+                    </div>
+
+                </div>
+
+
+                <form
+                    id="gematriaForm"
+                    class="calculator-form"
+                >
+
+
+                    <!-- Text Input -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="gematriaInput"
+                            class="form-label"
+                        >
+                            Enter text
+                        </label>
+
+
+                        <textarea
+                            id="gematriaInput"
+                            class="text-input"
+                            name="gematriaInput"
+                            rows="4"
+                            placeholder="Enter a word, name, phrase, or sentence..."
+                            autocomplete="off"
+                            spellcheck="false"
+                        ></textarea>
+
+
+                        <p
+                            class="input-help"
+                            id="inputHelp"
+                        >
+                            Letters are used for the calculation;
+                            spaces and punctuation are ignored.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- Method -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="gematriaMethod"
+                            class="form-label"
+                        >
+                            Select gematria method
+                        </label>
+
+
+                        <select
+                            id="gematriaMethod"
+                            class="method-select"
+                            name="gematriaMethod"
+                        >
+
+                            <option value="english-ordinal">
+                                English Ordinal
+                            </option>
+
+                            <option value="english-reduced">
+                                English Reduced
+                            </option>
+
+                            <option value="english-reverse">
+                                English Reverse Ordinal
+                            </option>
+
+                            <option value="english-reverse-reduced">
+                                English Reverse Reduced
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Calculate -->
+
+                    <button
+                        type="submit"
+                        class="calculate-button"
+                        id="calculateButton"
+                    >
+
+                        <span>
+                            Calculate Gematria
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- Reset -->
+
+                    <button
+                        type="button"
+                        class="reset-button"
+                        id="resetButton"
+                    >
+                        Clear Calculator
+                    </button>
+
+
+                </form>
+
+
+                <!-- Error -->
+
+                <div
+                    class="error-message"
+                    id="errorMessage"
+                    role="alert"
+                    aria-live="polite"
+                    hidden
+                >
+                </div>
+
+
+                <!-- Result -->
+
+                <div
+                    class="result-panel"
+                    id="resultPanel"
+                    aria-live="polite"
+                >
+
+
+                    <div class="result-top">
+
+                        <span class="result-label">
+                            YOUR RESULT
+                        </span>
+
+
+                        <span
+                            class="result-method"
+                            id="resultMethod"
+                        >
+                            English Ordinal
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-value-wrapper">
+
+                        <span
+                            class="result-value"
+                            id="resultValue"
+                        >
+                            0
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-text">
+
+                        <span class="result-text-label">
+                            Calculated text
+                        </span>
+
+
+                        <strong id="resultText">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRODUCTION
+    ========================== -->
+
+    <section class="intro-section section">
+
+        <div class="container">
+
+
+            <div class="section-heading centered">
+
+                <span class="section-kicker">
+                    UNDERSTANDING GEMATRIA
+                </span>
+
+
+                <h2>
+                    What Is Gematria?
+                </h2>
+
+
+                <p>
+
+                    Gematria is a system in which letters are assigned
+                    numerical values. A word or phrase can then be
+                    represented by the sum of the values assigned to
+                    its letters.
+
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+
+                <article class="info-card">
+
+                    <div class="info-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Enter Your Text
+                    </h3>
+
+                    <p>
+
+                        Enter any word, name, phrase, or sentence
+                        you want to calculate.
+
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <div class="info-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Choose a Method
+                    </h3>
+
+                    <p>
+
+                        Select the gematria system you want to use
+                        for the calculation.
+
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <div class="info-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Get the Value
+                    </h3>
+
+                    <p>
+
+                        The calculator adds the corresponding letter
+                        values and displays the resulting number.
+
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         METHODS
+    ========================== -->
+
+    <section class="methods-section section">
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+                <span class="section-kicker">
+                    CALCULATION SYSTEMS
+                </span>
+
+
+                <h2>
+                    Explore Gematria Methods
+                </h2>
+
+
+                <p>
+
+                    Different gematria systems assign values to letters
+                    in different ways. Use the calculator above to
+                    compare common English methods.
+
+                </p>
+
+            </div>
+
+
+            <div class="method-grid">
+
+
+                <!-- Method 1 -->
+
+                <article class="method-card featured-method">
+
+                    <div class="method-card-top">
+
+                        <span class="method-number">
+                            01
+                        </span>
+
+
+                        <span class="method-tag">
+                            POPULAR
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        English Ordinal
+                    </h3>
+
+
+                    <p>
+
+                        Letters are assigned values according to their
+                        position in the English alphabet:
+                        A = 1, B = 2, C = 3, and so on through Z = 26.
+
+                    </p>
+
+
+                    <a
+                        href="gematria-formula.html"
+                        class="text-link"
+                    >
+
+                        Learn the formula
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+                <!-- Method 2 -->
+
+                <article class="method-card">
+
+                    <div class="method-card-top">
+
+                        <span class="method-number">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        English Reduced
+                    </h3>
+
+
+                    <p>
+
+                        Alphabet positions are reduced to a single
+                        digit, creating values from 1 through 9.
+
+                    </p>
+
+
+                    <a
+                        href="gematria-formula.html"
+                        class="text-link"
+                    >
+
+                        Learn the formula
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+                <!-- Method 3 -->
+
+                <article class="method-card">
+
+                    <div class="method-card-top">
+
+                        <span class="method-number">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Reverse Ordinal
+                    </h3>
+
+
+                    <p>
+
+                        The alphabet is counted in reverse order,
+                        assigning Z = 1, Y = 2, X = 3, and A = 26.
+
+                    </p>
+
+
+                    <a
+                        href="gematria-formula.html"
+                        class="text-link"
+                    >
+
+                        Learn the formula
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+                <!-- Method 4 -->
+
+                <article class="method-card">
+
+                    <div class="method-card-top">
+
+                        <span class="method-number">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Reverse Reduced
+                    </h3>
+
+
+                    <p>
+
+                        Reverse alphabet values are reduced to
+                        single-digit values before being added together.
+
+                    </p>
+
+
+                    <a
+                        href="gematria-formula.html"
+                        class="text-link"
+                    >
+
+                        Learn the formula
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GUIDE CTA
+    ========================== -->
+
+    <section class="guide-cta-section section">
+
+        <div class="container">
+
+
+            <div class="guide-cta">
+
+
+                <div class="guide-cta-content">
+
+                    <span class="section-kicker">
+                        WANT TO LEARN MORE?
+                    </span>
+
+
+                    <h2>
+                        Learn How Gematria Calculations Work
+                    </h2>
+
+
+                    <p>
+
+                        Explore our guide to understand gematria,
+                        calculation methods, letter values, and how
+                        numerical results are produced.
+
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="gematria-guide.html"
+                    class="secondary-button"
+                >
+
+                    Read the Gematria Guide
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FAQ PREVIEW
+    ========================== -->
+
+    <section class="faq-preview-section section">
+
+        <div class="container">
+
+
+            <div class="section-heading centered">
+
+                <span class="section-kicker">
+                    COMMON QUESTIONS
+                </span>
+
+
+                <h2>
+                    Gematria Calculator FAQ
+                </h2>
+
+
+                <p>
+
+                    Have questions about how the calculator works?
+                    Find answers to common questions on our FAQ page.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq-preview-grid">
+
+
+                <article class="faq-preview-card">
+
+                    <h3>
+                        What does a gematria calculator do?
+                    </h3>
+
+
+                    <p>
+
+                        It assigns numerical values to letters according
+                        to a selected gematria system and calculates the
+                        total value of the entered text.
+
+                    </p>
+
+                </article>
+
+
+                <article class="faq-preview-card">
+
+                    <h3>
+                        Can I calculate a phrase?
+                    </h3>
+
+
+                    <p>
+
+                        Yes. You can enter a word, name, phrase, or
+                        sentence. Spaces and punctuation are ignored
+                        during the calculation.
+
+                    </p>
+
+                </article>
+
+
+                <article class="faq-preview-card">
+
+                    <h3>
+                        Why do methods produce different values?
+                    </h3>
+
+
+                    <p>
+
+                        Different systems use different rules for
+                        assigning numerical values to letters.
+
+                    </p>
+
+                </article>
+
+
+            </div>
+
+
+            <div class="center-action">
+
+                <a
+                    href="faq.html"
+                    class="outline-button"
+                >
+                    View All FAQs
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INFORMATION NOTICE
+    ========================== -->
+
+    <section class="notice-section">
+
+        <div class="container">
+
+
+            <div class="notice-box">
+
+
+                <div class="notice-icon">
+                    i
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        Informational Tool
+                    </h2>
+
+
+                    <p>
+
+                        This website provides numerical calculations
+                        based on selected gematria systems. Results are
+                        intended for informational and educational
+                        purposes and should not be treated as factual
+                        predictions or definitive interpretations.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+
+        <div class="footer-main">
+
+
+            <!-- Footer Brand -->
+
+            <div class="footer-brand">
+
+
+                <a
+                    href="index.html"
+                    class="site-logo footer-logo"
+                    aria-label="Gematria Calculator Home"
+                >
+
+                    <img
+                        src="assets/logo.png"
+                        alt="Gematria Calculator"
+                        class="logo-image"
+                    >
+
+                </a>
+
+
+                <p>
+
+                    A simple online tool for calculating gematria
+                    values using different numerical letter systems.
+
+                </p>
+
+            </div>
+
+
+            <!-- Calculator Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Calculator
+                </h3>
+
+
+                <a href="index.html">
+                    Gematria Calculator
+                </a>
+
+
+                <a href="gematria-formula.html">
+                    Gematria Formula
+                </a>
+
+
+                <a href="gematria-guide.html">
+                    Gematria Guide
+                </a>
+
+            </div>
+
+
+            <!-- Information Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a href="disclaimer.html">
+                    Disclaimer
+                </a>
+
+            </div>
+
+
+            <!-- Legal Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Legal
+                </h3>
+
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+
+                <a href="disclaimer.html">
+                    Disclaimer
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+
+            <p>
+                © 2026 GematriaCalc. All rights reserved.
+            </p>
+
+
+            <p>
+                Gematria calculation tool for informational use.
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
